@@ -1,3 +1,26 @@
+:root{
+  --primary-clr: #46a1ab;
+  --secondary-clr:#3c7472;
+  --tertiary-clr: #ab99de;
+  --primary-dark:#02181b;
+  --secondary-dark:#0d1211;
+  --tertiary-dark:#0f0c19;
+  --primary-light: #a4dde4;
+  --secondary-light:#708f8e;
+  --white-warm:#f0efef;
+  --white-cold:#d5f4e6;
+  --white-neutral:#ddeedd;
+  --black-warm:#0f0f0f;
+  --black-cold:#1f1f1e;
+  --black-neutral:#1a1a1a;
+  --grey-50:#808080;
+  --grey-60:#686864;
+  --grey-70:#4e4e4b;
+  --grey-80:#343432;
+  --text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
+}
 body {
   font-family: "Monaco", sans-serif;
   margin: 0 50px;
