@@ -11,11 +11,29 @@ form.addEventListener("submit", (e) => {
 	formValidation();
 });
 
+var now = new Date();
+const minDate = () => {
+	let day = now.getDate();
+	let month = now.getMonth() + 1;
+	let year = now.getFullYear();
+	if (day < 10) {
+		day = "0" + day;
+	}
+	if (month < 10) {
+		month = "0" + month;
+	}
+	return `${year}-${month}-${day}`;
+}
+
 let formValidation = () => {
 	if (textInput.value === "") {
 		console.log("failure");
 		msg.innerHTML = `<i>This field cannot be blank; please, add a new task.</i>`;
-	} else {
+	} else if (dateInput.value < minDate()) {
+		console.log("failure");
+		msg2.innerHTML = `<i>The due date cannot be in the past.</i>`;	
+	}
+	else {
 		console.log("success");
 		msg.innerHTML = "";
 		acceptData();

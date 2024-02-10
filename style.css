@@ -22,9 +22,10 @@
   
 }
 body {
-  font-family: "Monaco", sans-serif;
+  font-family: Helvetica, Ubuntu, sans-serif;
   margin: 0 50px;
-  background-color: #e5e5e5;
+  background-color: var(--white-neutral);
+  color: var(--black-cold);
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -32,7 +33,7 @@ body {
   height: 100vh;
 }
 .app {
-  background-color: #fff;
+  background-color: var(--primary-light);
   width: 300px;
   height: 500px;
   border: 5px solid #5163a9;
@@ -53,7 +54,7 @@ body {
   padding: 3px;
   border-radius: 3px;
 }
-#msg {
+#msg, #msg2 {
   color: red;
 }
 #tasks {
