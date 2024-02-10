@@ -28,7 +28,6 @@
 	<body>
 		<div class="app">
 			<h4 class="mb-3">To-Do App</h4>
-
 			<div
 				id="addNew"
 				data-bs-toggle="modal"
@@ -73,16 +72,16 @@
 							class="form-control"
 							name=""
 							id="textInput"
+							maxlength="60"
 						/>
 						<div id="msg"></div>
 						<br />
-						<p>When is the task due? <sub>*optional</sub></p>
+						<p>When is the task due? <sup>*optional</sup></p>
 						<input
 							type="date"
 							class="form-control"
 							name=""
 							id="dateInput"
-							min="{$minDate}"
 						/>
 						<div id="msg2"></div>
 						<br />
@@ -93,6 +92,7 @@
 							id="textarea"
 							cols="30"
 							rows="5"
+							maxlength="160"
 						></textarea>
 					</div>
 					<div class="modal-footer">

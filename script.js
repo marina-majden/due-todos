@@ -3,6 +3,7 @@ let textInput = document.getElementById("textInput");
 let dateInput = document.getElementById("dateInput");
 let textarea = document.getElementById("textarea");
 let msg = document.getElementById("msg");
+let msg2 = document.getElementById("msg2");
 let tasks = document.getElementById("tasks");
 let add = document.getElementById("add");
 
@@ -92,6 +93,7 @@ let deleteTask = (e) => {
 
 	console.log(data);
 };
+
 let editTask = (e) => {
 	let selectedTask = e.parentElement.parentElement;
 
@@ -99,7 +101,7 @@ let editTask = (e) => {
 	dateInput.value = selectedTask.children[1].innerHTML;
 	textarea.value = selectedTask.children[2].innerHTML;
 
-	deleteTask(e);
+	add.innerHTML = "Save";
 };
 (() => {
 	data = JSON.parse(localStorage.getItem("data")) || [];
